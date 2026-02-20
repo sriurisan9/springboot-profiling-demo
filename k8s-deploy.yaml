@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: profiling-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: profiling-demo
+  template:
+    metadata:
+      labels:
+        app: profiling-demo
+    spec:
+      containers:
+      - name: profiling-demo
+        image: your-docker-image
+        env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: "prod"
+        ports:
+        - containerPort: 8080
