@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import com.example.profilingdemo.service.MessageService;
 
 @RestController
-//MC
+//Controller Message
 public class MessageController {
 
     private final MessageService messageService;
