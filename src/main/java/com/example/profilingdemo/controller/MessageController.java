@@ -1,10 +1,13 @@
 package com.example.profilingdemo.controller;
 
-import com.example.profilingdemo.service.MessageService;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import com.example.profilingdemo.service.MessageService;
+
 @RestController
+//MC
 public class MessageController {
 
     private final MessageService messageService;
